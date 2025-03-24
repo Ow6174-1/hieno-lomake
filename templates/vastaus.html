@@ -1,3 +1,162 @@
+<head>
 
-Kirjoitit nimeksesi: {{nimi}}
+    <link rel="icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/security-253/64/virus-malware-skull-security-256.png">
+    <title>DarkWeb</title>
+    
+    <script>
+        setTimeout(() => {
+            document.getElementById("a").style.visibility = "visible";
+        }, 1000);
+        setTimeout(() => {
+            document.getElementById("b").style.visibility = "visible";
+        }, 4000);
+        setTimeout(() => {
+            document.getElementById("c").style.visibility = "visible";
+        }, 9000);
+        setTimeout(() => {
+            document.getElementById("lost").style.visibility = "visible";
+        }, 10000);
+        setTimeout(() => {
+            document.getElementById("won").style.visibility = "visible";
+        }, 10000);
+        setTimeout(() => {
+            document.getElementById("button").style.visibility = "visible";
+        }, 11000);
+        setTimeout(() => {
+            document.getElementById("troll").style.visibility = "visible";
+        }, 13000);
+    </script>
+
+    <style>
+        #a, #b, #c {
+            visibility: hidden;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        #lost {
+            visibility: hidden;
+            font-size: 24px;
+            color: #644117;
+            text-align: center;
+        }
+        #won {
+            visibility: hidden;
+            font-size: 24px;
+            color: #19543E;
+            text-align: center;
+        }
+        
+        #button {
+        visibility: hidden;
+        padding: 10px 20px;
+        font-size: 22px;
+        -webkit-border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid #008CBA;
+        background-color: #008CBA;
+        background-color: #e7e7e7;
+        cursor: pointer;
+        color: #005f7f;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        }
+        #button:hover {
+        background-color: #005f7f;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        color: white;
+        }
+        #button:active {
+        background-color: #004466;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transform: translateY(2px);
+        }
+        #troll {
+        visibility: hidden;
+        padding: 10px 20px;
+        font-size: 22px;
+        -webkit-border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid #008CBA;
+        background-color: #008CBA;
+        background-color: #e7e7e7;
+        cursor: pointer;
+        color: #005f7f;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        position: center;
+        }
+        #troll:hover {
+        background-color: #005f7f;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        color: white;
+        }
+        #troll:active {
+        background-color: #004466;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transform: translateY(2px);
+        }        
+        #button-place {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        }
+        #troll-place {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        }
+        #troll-place:hover {
+        display: static;
+        justify-content: center;
+        margin-left: 2000px;
+        margin-top: 1000px;
+        height: 100px;
+        transform: translateY(2px);
+        }        
+    </style>
+
+</head>
+
+<body>
+<style>
+body {background-image: url('https://culture.org/wp-content/uploads/online-casino-evolution.jpg');}
+</style>
+
+<pre><font size=5.5>Your bet: {{bet}}$ </font></pre>
+
+    
+    
+<p id="a">{{a}}</p>
+<p id="b">{{b}}</p>
+<p id="c">{{c}}</p>
+{% if win %}
+    <b><p id="won"><font size= 7>Congrats you have won {{bet * 2}}$</font></p></b>
+{% else %}
+    <b><p id="lost"><font size=7>You lost {{bet}}$</font></p></b>
+
+{% endif %}
+<div id="button-place">
+    <form method=GET action=/>
+        <input id="button" type=submit value="Play again">
+    </form>
+</div>
+<div id="troll-place">
+    <form method=GET action=/>
+        <input id="troll" type=submit value="Get back your money">
+    </form>
+
+</body>
+
+
+
+
+
+
 
