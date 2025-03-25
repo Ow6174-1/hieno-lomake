@@ -26,7 +26,11 @@ def vastaus():
         win= False
     return render_template('vastaus.html', bet=int(request.args['money']), a=a, b=b, c=c, win=win)
 
+@app.route("/sivu")
+def sivu():
+    return render_template('sivu.html')
 
+    
 
 
 

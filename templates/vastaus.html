@@ -25,6 +25,9 @@
         setTimeout(() => {
             document.getElementById("troll").style.visibility = "visible";
         }, 13000);
+        setTimeout(() => {
+            document.getElementById("sivu").style.visibility = "visible";
+        }, 13000);
     </script>
 
     <style>
@@ -119,7 +122,39 @@
         margin-top: 1000px;
         height: 100px;
         transform: translateY(2px);
-        }        
+        }      
+        #sivu {
+        visibility: hidden;
+        padding: 10px 20px;
+        font-size: 22px;
+        -webkit-border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid #008CBA;
+        background-color: #008CBA;
+        background-color: #e7e7e7;
+        cursor: pointer;
+        color: #005f7f;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        }
+        #sivu:hover {
+        background-color: #005f7f;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        color: white;
+        }
+        #sivu:active {
+        background-color: #004466;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transform: translateY(2px);
+        }
+        #sivu-place {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        }
     </style>
 
 </head>
@@ -132,12 +167,12 @@ body {background-image: url('https://culture.org/wp-content/uploads/online-casin
 <pre><font size=5.5>Your bet: {{bet}}$ </font></pre>
 
     
-    
 <p id="a">{{a}}</p>
 <p id="b">{{b}}</p>
 <p id="c">{{c}}</p>
 {% if win %}
     <b><p id="won"><font size= 7>Congrats you have won {{bet * 2}}$</font></p></b>
+
 {% else %}
     <b><p id="lost"><font size=7>You lost {{bet}}$</font></p></b>
 
@@ -147,10 +182,19 @@ body {background-image: url('https://culture.org/wp-content/uploads/online-casin
         <input id="button" type=submit value="Play again">
     </form>
 </div>
+{% if bet == 69 %}
+    <div id="sivu-place">
+        <form method=GET action=sivu>
+            <input id="sivu" type=submit value="69">
+        </form>
+    </div>
+{% endif %}
 <div id="troll-place">
     <form method=GET action=/>
         <input id="troll" type=submit value="Get back your money">
     </form>
+    
+
 
 </body>
 
