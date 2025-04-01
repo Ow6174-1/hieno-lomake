@@ -1,7 +1,9 @@
 <html>
 <head>
     <link rel=stylesheet href="{{url_for('static',filename='tyylit.css')}}">
-
+    <title>
+    DarkWeb
+    </title>
     <link rel="icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/security-253/64/virus-malware-skull-security-256.png">
 <style>
 h1 {text-align: center;}
@@ -23,13 +25,30 @@ form {text-align: center;}
 	<div><h2><b>Welcome to the DARKWEB'S gambling site</b></h2></div>
 	<p><font color="black">How much money do you want to bet:</font></p>
 	<form method=GET action=vastaus>
-		<input type=text name="money">
-		<input type=submit value="Press to play">
-		
+		<input type=text name="money" id="bet">
+		<input onclick="redirect()" type=submit value="Press to play">
+		<script>
+    		function redirect() {
+        		const text = document.getElementById("bet").value;
+        		
+        		switch (text) {
+        		
+            		case "420":
+                		window.location.herf ="https://en.wikipedia.org/wiki/Cannabis_(drug)";
+                		
+                		break;
+                	case "666":
+                    	window.location.herf ="https://en.wikipedia.org/wiki/Satanism";
+                		
+                		break;
+        		
+        		}
+    		
+    		
+    		}
+		</script>
 	</form>
 </body>
-<title>
-DarkWeb
-</title>
+
 
 </html>
