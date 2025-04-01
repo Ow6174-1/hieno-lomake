@@ -28,6 +28,15 @@
         setTimeout(() => {
             document.getElementById("sivu").style.visibility = "visible";
         }, 13000);
+        setTimeout(() => {
+            document.getElementById("weed").style.visibility = "visible";
+        }, 13000);
+        setTimeout(() => {
+            document.getElementById("satanism").style.visibility = "visible";
+        }, 13000);
+        setTimeout(() => {
+            document.getElementById("wolf").style.visibility = "visible";
+        }, 13000);
     </script>
 
     <style>
@@ -123,7 +132,7 @@
         height: 100px;
         transform: translateY(2px);
         }      
-        #sivu {
+        #sivu, #weed, #satanism, #wolf {
         visibility: hidden;
         padding: 10px 20px;
         font-size: 22px;
@@ -139,17 +148,17 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease;
         }
-        #sivu:hover {
+        #sivu:hover, #weed:hover, #satanism:hover, #wolf:hover {
         background-color: #005f7f;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         color: white;
         }
-        #sivu:active {
+        #sivu:active, #weed:active, #satanism:active, #wolf:activ {
         background-color: #004466;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         transform: translateY(2px);
         }
-        #sivu-place {
+        #sivu-place, #weed-place, #satanism-place, #wolf-place {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -186,6 +195,27 @@ body {background-image: url('https://culture.org/wp-content/uploads/online-casin
     <div id="sivu-place">
         <form method=GET action=sivu>
             <input id="sivu" type=submit value="69">
+        </form>
+    </div>
+{% endif %}
+{% if bet == 420 %}
+    <div id="weed-place">
+        <form method=GET action="https://en.wikipedia.org/wiki/Cannabis_(drug)">
+            <input id="weed" type=submit value="420">
+        </form>
+    </div>
+{% endif %}    
+{% if bet == 666 %}
+    <div id="satanism-place">
+        <form method=GET action="https://en.wikipedia.org/wiki/Satanism">
+            <input id="satanism" type=submit value="666">
+        </form>
+    </div>
+{% endif %}
+{% if bet == 69 %}
+    <div id="wolf-place">
+        <form method=GET action=wolf>
+            <input id="wolf" type=submit value="1002">
         </form>
     </div>
 {% endif %}

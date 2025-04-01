@@ -25,28 +25,9 @@ form {text-align: center;}
 	<div><h2><b>Welcome to the DARKWEB'S gambling site</b></h2></div>
 	<p><font color="black">How much money do you want to bet:</font></p>
 	<form method=GET action=vastaus>
-		<input type=text name="money" id="bet">
-		<input onclick="redirect()" type=submit value="Press to play">
-		<script>
-    		function redirect() {
-        		const text = document.getElementById("bet").value;
-        		
-        		switch (text) {
-        		
-            		case "420":
-                		window.location.herf ="https://en.wikipedia.org/wiki/Cannabis_(drug)";
-                		
-                		break;
-                	case "666":
-                    	window.location.herf ="https://en.wikipedia.org/wiki/Satanism";
-                		
-                		break;
-        		
-        		}
-    		
-    		
-    		}
-		</script>
+		<input type=text name="money">
+		<input type=submit value="Press to play">
+
 	</form>
 </body>
 

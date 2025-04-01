@@ -30,6 +30,10 @@ def vastaus():
 def sivu():
     return render_template('sivu.html')
 
+@app.route("/wolf")
+def wolf():
+    return render_template('wolf.html')
+
     
 
 
